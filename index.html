@@ -1,17 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>June</title>
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 	<section class="py-20 border-b border-gray-200">
-		<div class="container mx-auto">
-			<h1 class="text-5xl m-0 text-gray-900 text-center">June</h1>
+
+		<h1 class="text-5xl m-0 text-gray-900 text-center">June</h1>
+
+		<button type="button"
+			class="text-base inline-block px-4 py-2 rounded-lg border bg-blue-600 text-white border-blue-600 cursor-pointer"
+			data-toggle="modal" data-target="modalOne">Modal</button>
+
+		<div class="fixed inset-0 p-4 bg-black/60 z-[999] hidden modal-popup transition-opacity duration-300 opacity-0"
+			id="modalOne" tabindex="-1" aria-hidden="true">
+			<div class="bg-white rounded-lg shadow-2xl w-100 max-w-4xl mx-auto">
+				<div class="relative">
+					<div class="flex items-center justify-between p-4 border-b border-gray-200">
+						<h5>Modal Header</h5>
+						<button class="inline-block border-0 cursor-pointer p-1" type="button" data-dismiss="modal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M18 6l-12 12" />
+								<path d="M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+					<div class="p-4">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error nemo magni non adipisci iusto
+							excepturi, illum alias voluptas ducimus harum laudantium ab molestiae nihil, aliquid facere nisi
+							ipsam? Tempora, accusantium?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<button type="button"
+			class="text-base inline-block px-4 py-2 rounded-lg border bg-blue-600 text-white border-blue-600 cursor-pointer"
+			data-toggle="modal" data-target="modalTwo">Modal 2</button>
+
+		<div class="fixed inset-0 p-4 bg-black/60 z-[999] hidden modal-popup transition-opacity duration-300 opacity-0"
+			id="modalTwo" tabindex="-1" aria-hidden="true">
+			<div class="bg-white rounded-lg shadow-2xl w-100 max-w-4xl mx-auto">
+				<div class="relative">
+					<div class="flex items-center justify-between p-4 border-b border-gray-200">
+						<h5>Modal Header 2</h5>
+						<button class="inline-block border-0 cursor-pointer p-1" type="button" data-dismiss="modal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M18 6l-12 12" />
+								<path d="M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+					<div class="p-4">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error nemo magni non adipisci iusto
+							excepturi, illum alias voluptas ducimus harum laudantium ab molestiae nihil, aliquid facere nisi
+							ipsam? Tempora, accusantium?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<button type="button"
+			class="text-base inline-block px-4 py-2 rounded-lg border bg-blue-600 text-white border-blue-600 cursor-pointer"
+			data-toggle="modal" data-target="loginPopup">Login</button>
+
+		<div class="fixed inset-0 p-4 bg-black/60 z-[999] hidden modal-popup transition-opacity duration-300 opacity-0"
+			id="loginPopup" tabindex="-1" aria-hidden="true">
+			<div class="bg-white rounded-lg shadow-2xl w-100 max-w-4xl mx-auto">
+				<div class="relative">
+					<div class="flex items-center justify-between p-4 border-b border-gray-200">
+						<h5>Login</h5>
+						<button class="inline-block border-0 cursor-pointer p-1" type="button" data-dismiss="modal">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+								stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+								class="icon icon-tabler icons-tabler-outline icon-tabler-x">
+								<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+								<path d="M18 6l-12 12" />
+								<path d="M6 6l12 12" />
+							</svg>
+						</button>
+					</div>
+					<div class="p-4">
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error nemo magni non adipisci iusto
+							excepturi, illum alias voluptas ducimus harum laudantium ab molestiae nihil, aliquid facere nisi
+							ipsam? Tempora, accusantium?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		</div>
 	</section>
+
+	<script src="js/modal.js"></script>
+
 </body>
+
 </html>
