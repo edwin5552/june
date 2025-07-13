@@ -4,3 +4,53 @@
 	--font-heading: "Inter", sans-serif;
 	--font-body: "Inter", sans-serif;
 }
+
+@layer base {
+	body {
+		font-family: var(--font-body);
+	}
+}
+
+@layer components {
+
+
+	.button {
+		@apply text-base text-center inline-block px-4 py-2.5 border border-transparent cursor-pointer transition-colors;
+	}
+
+	.button-primary {
+		@apply bg-blue-600 text-white hover:bg-blue-700;
+	}
+
+	.button-secondary {
+		@apply bg-gray-600 text-white hover:bg-gray-700;
+	}
+
+	.button-success {
+		@apply bg-green-600 text-white hover:bg-green-700;
+	}
+
+	.button-danger {
+		@apply bg-red-600 text-white hover:bg-red-700;
+	}
+
+	.button-warning {
+		@apply bg-yellow-600 text-white hover:bg-yellow-700;
+	}
+
+	.button-info {
+		@apply bg-cyan-600 text-white hover:bg-cyan-700;
+	}
+
+	.button-light {
+		@apply bg-gray-200 text-gray-800 hover:bg-gray-300;
+	}
+
+	.button-dark {
+		@apply bg-gray-800 text-white hover:bg-gray-900;
+	}
+}
+
+@layer utilities {
+	/* Additional utility classes can be added here */
+}
